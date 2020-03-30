@@ -1,0 +1,25 @@
+{
+  "name": "criticalmass_navbar",
+  "version": "1.0.0",
+  "description": "take home assessment",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack --watch --config ./webpack.config.js & ./node_modules/.bin/webpack-dev-server --hot",
+    "start2": "./node_modules/.bin/webpack-dev-server --hot",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "webpack": "^3.8.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "author": "Chester Hoang",
+  "license": "ISC"
+}
