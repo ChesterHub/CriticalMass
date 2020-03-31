@@ -1,6 +1,9 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-import App from './components/App.jsx'
+import './styles/app.css'
 
-render(<App/>, document.getElementById('main'))
+import App from './components/App.jsx'
+import {data} from './navigation.js'
+
+render(<App data={JSON.parse(data)}/>, document.getElementById('main'))
