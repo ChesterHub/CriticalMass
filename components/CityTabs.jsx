@@ -7,6 +7,10 @@ export default class CityTabs extends Component {
 	}
 	componentDidMount() {
 		this.props.changeCity(this.props.cities[0].section)
+		window.addEventListener("resize", ()=>{this.moveSelectedDash(this.props.selectedCity)})
+	}
+	componentWillUnmount(){
+		window.removeEventListener("resize", ()=>{this.moveSelectedDash(this.props.selectedCity)})
 	}
 	componentWillReceiveProps(nextProps){
 		if (this.props.selectedCity !== nextProps.selectedCity) {
@@ -26,7 +30,6 @@ export default class CityTabs extends Component {
 	  dash.style.height = `${height}px`
 	  dash.style.left = `${left}px`
 	  dash.style.top = `${top}px`
-		return
 	}
 	render(){
 		return (
