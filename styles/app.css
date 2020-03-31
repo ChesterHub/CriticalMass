@@ -50,9 +50,3 @@ body {
 	border-bottom: #333333 1px solid;
 	transition: all 0.40s ease-out;
 }
-
-@media only screen and (max-width: 900px) {
-	.main-app {
-		/*width: 100%;*/
-	}
-}
