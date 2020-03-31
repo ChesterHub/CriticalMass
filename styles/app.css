@@ -1,34 +1,38 @@
 body {
-	height: 100vh;
-	width: 100vw;
 	background-color: #f3f7fa;
-	font-family: "Lucida Console", Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .main-app {
 	padding-top: 80px;
-	width: 90%;
+	height: 100vh;
+	width: 100vw;
 	text-align: center;
 	margin: auto;
+	overflow-x: hidden;
 }
 
 .nav-tabs {
 	display: block;
 	margin: auto;
 	white-space: nowrap;
+	overflow-x: scroll;
+  margin-left: 10%;
+  margin-right: 10%;
 	padding-bottom: 8px;
-	border-bottom:  lightgrey 1px solid;
+	border-bottom: lightgrey 1px solid;
 }
 
 .city-tab {
 	display: inline-block;
 	height: 20px;
 	color: #a8a8a8;
-	font-size: 16px;
-	margin-right: 30px;
+	font-size: 14px;
+	margin-right: 50px;
+	letter-spacing: 0.04em;
 }
 
 .city-tab:hover {
-	color: #3232ff;
+	color: #0080ff;
 	cursor: pointer;
 }
 .city-tab.selected {
@@ -45,4 +49,10 @@ body {
 	pointer-events: none;
 	border-bottom: #333333 1px solid;
 	transition: all 0.40s ease-out;
+}
+
+@media only screen and (max-width: 900px) {
+	.main-app {
+		/*width: 100%;*/
+	}
 }

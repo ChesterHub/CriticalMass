@@ -23,8 +23,8 @@ export default class CityTabs extends Component {
 
 		let width = element.getBoundingClientRect().width;
 	  let height = element.getBoundingClientRect().height;
-	  let left = element.getBoundingClientRect().left;
-	  let top = element.getBoundingClientRect().top;
+	  let left = element.getBoundingClientRect().left + window.pageXOffset;
+	  let top = element.getBoundingClientRect().top  + window.pageYOffset;
 
 		dash.style.width = `${width}px`
 	  dash.style.height = `${height}px`
