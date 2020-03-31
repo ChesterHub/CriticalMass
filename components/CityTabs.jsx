@@ -10,7 +10,7 @@ export default class CityTabs extends Component {
 				{
 					this.props.cities.map(city => {
 						return <div 
-									className="city-tab" 
+									className={`city-tab ${this.props.selectedCity === city.section?"selected":""}`} 
 									onClick={()=>{this.props.changeCity(city.section)}}
 								>
 									{city.label}

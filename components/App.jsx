@@ -23,6 +23,7 @@ export default class App extends Component {
 				<CityTabs 
 					cities={this.props.data.cities}
 					changeCity={this.changeCity}
+					selectedCity={this.state.selectedCity}
 				/>
 			</div>
 		)
