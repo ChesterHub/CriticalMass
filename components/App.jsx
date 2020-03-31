@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import CityTabs from './CityTabs.jsx'
 
 export default class App extends Component {
 	constructor(props) {
@@ -11,14 +12,18 @@ export default class App extends Component {
 	changeCity(selectedCity) {
 		this.setState({
 			selectedCity
+		}, ()=>{
+			console.log("new value", this.state.selectedCity)
 		})
 	}
 	render() {
-		let data = JSON.parse(this.props.data)
 		console.log("this.props", this.props)
 		return (
 			<div className="main-app">
-				Oh yea, the main app
+				<CityTabs 
+					cities={this.props.data.cities}
+					changeCity={this.changeCity}
+				/>
 			</div>
 		)
 	}
