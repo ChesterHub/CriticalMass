@@ -1,0 +1,11 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: yellow;
+}
+.main-app {
+	color: red;
+}
+.main-app:hover {
+	color: blue;
+}
