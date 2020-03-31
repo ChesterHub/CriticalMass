@@ -13,12 +13,9 @@ export default class App extends Component {
 		if (!selectedCity) return
 		this.setState({
 			selectedCity
-		}, ()=>{
-			console.log("new value", this.state.selectedCity)
 		})
 	}
 	render() {
-		console.log("this.props", this.props)
 		return (
 			<div className="main-app">
 				<CityTabs 
