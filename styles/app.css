@@ -16,32 +16,33 @@ body {
 	margin: auto;
 	white-space: nowrap;
 	padding-bottom: 8px;
-	border-bottom:  grey 1px solid;
+	border-bottom:  lightgrey 1px solid;
 }
 
 .city-tab {
 	display: inline-block;
 	height: 20px;
-	color: grey;
+	color: #a8a8a8;
 	font-size: 16px;
 	margin-right: 30px;
 }
 
 .city-tab:hover {
-	color: darkblue;
+	color: #3232ff;
 	cursor: pointer;
 }
-
+.city-tab.selected {
+	color: #333333;
+}
 .city-tab.selected:hover {
-	color: grey;
+	color: #333333;
 	cursor: default;
 }
 
 .selected-dash {
 	position: absolute;
-	height: 20px;
-	padding-bottom: 7px;
+	padding-bottom: 8px;
 	pointer-events: none;
-	border-bottom: black 3px solid;
-	transition: all 0.40s ease-in-out;
+	border-bottom: #333333 1px solid;
+	transition: all 0.40s ease-out;
 }
