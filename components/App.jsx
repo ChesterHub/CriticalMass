@@ -10,6 +10,7 @@ export default class App extends Component {
 		this.changeCity = this.changeCity.bind(this)
 	}
 	changeCity(selectedCity) {
+		if (!selectedCity) return
 		this.setState({
 			selectedCity
 		}, ()=>{
