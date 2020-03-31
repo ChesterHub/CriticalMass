@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack --watch --config ./webpack.config.js & ./node_modules/.bin/webpack-dev-server --hot",
-    "start2": "./node_modules/.bin/webpack-dev-server --hot",
-    "build": "webpack"
   },
   "dependencies": {
     "react": "^16.13.1",
